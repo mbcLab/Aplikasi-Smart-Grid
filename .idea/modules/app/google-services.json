@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "867707287132",
+    "firebase_url": "https://abdimas-94c26.firebaseio.com",
+    "project_id": "abdimas-94c26",
+    "storage_bucket": "abdimas-94c26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867707287132:android:4702cc77ced96a6c4bd899",
+        "android_client_info": {
+          "package_name": "com.example.appsabdimas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867707287132-c7qkr6crsta0argkuj7olsgraeg9tav6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appsabdimas",
+            "certificate_hash": "9c60ce1a8fbe0334f62537d64562092b6dd137fd"
+          }
+        },
+        {
+          "client_id": "867707287132-he7k9nrejvpm5jeduh4a88ir87nktt7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu_UI60FsftonvWcdQ0vEsP6KZ5dbUNV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867707287132-he7k9nrejvpm5jeduh4a88ir87nktt7u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

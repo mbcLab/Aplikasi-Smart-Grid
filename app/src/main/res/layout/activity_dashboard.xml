@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/telyu"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:text="DASHBOARD"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold|italic" />
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/colorPrimary" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerta_stencil"
+                android:text="Selamat Datang"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/header"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="159dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:text="ABDIMAS"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:text="SMK Telkom Bandung"
+                    android:textColor="#000000"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="155dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/smk" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtitle" />
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_compat"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/header"
+            android:fontFamily="@font/aclonica"
+            android:textOff="OFF"
+            android:textOn="ON"
+            android:thumb="@drawable/sw_thumb"
+            app:showText="true"
+            app:track="@drawable/sw_track">
+
+        </androidx.appcompat.widget.SwitchCompat>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="150dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/bt_exit"
+        android:layout_width="128dp"
+        android:layout_height="55dp"
+        android:onClick="logout"
+        android:layout_gravity="center"
+        android:text="Keluar">
+
+    </Button>
+
+</LinearLayout>
+
+
